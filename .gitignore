@@ -1,0 +1,22 @@
+## API ###
+
+# Byte-compiled / optimized / DLL files
+
+api/env/*
+api/error.log
+__pycache__/
+*.py[cod]
+
+## Frontend ## 
+
+.DS_Store
+# dependencies
+react-web-client/node_modules/*
+react-web-client/.pnp
+react-web-client/.pnp.js
+
+# production
+react-web-client/build
+
+## Settings ## 
+.vscode/*
