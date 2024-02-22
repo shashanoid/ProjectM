@@ -1,0 +1,123 @@
+.search-container {
+  width: 98%;
+  background-color: #eae5e5;
+  color: black;
+  padding: 20px;
+  border-radius: 4px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.search-albums-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-album {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.albums-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This allows the items to wrap to the next line */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  gap: 0.1px; /* Optional: Adds some space between the cards */
+  overflow-y: auto;
+}
+
+.album-image {
+  width: 72px;
+  height: 72px;
+}
+
+.album-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.playlists-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This allows the items to wrap to the next line */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  gap: 0.1px; /* Optional: Adds some space between the cards */
+  overflow-y: auto;
+}
+
+.search-playlists-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-playlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playlist-image {
+  width: 72px;
+  height: 72px;
+}
+
+.tracks-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This allows the items to wrap to the next line */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  gap: 0.1px; /* Optional: Adds some space between the cards */
+  overflow-y: auto;
+}
+
+.track-image {
+  width: 72px;
+  height: 72px;
+}
+
+.search-items {
+  width: 80%;
+}
+
+.artist-items {
+  width: 20%;
+  height: max-content;
+  margin-top: 6%;
+}
+
+.search-artist-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular image */
+  cursor: pointer;
+}
+
+.search-artists-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  padding-right: 16px;
+}
+
+.search-artist-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-track {
+  cursor: pointer;
+}

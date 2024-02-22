@@ -1,0 +1,74 @@
+.discovery-container {
+  width: 98%;
+  background-color: #fffefe;
+  color: black;
+  padding: 20px;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.discovery-header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8px;
+}
+
+.discovery-description {
+  padding-left: 20px;
+}
+
+.discovery-text {
+  font-size: 13px;
+  color: #777;
+}
+
+.discovery-music-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This allows the items to wrap to the next line */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  gap: 0.1px; /* Optional: Adds some space between the cards */
+  overflow-y: auto;
+}
+
+
+.music-card {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+.discovery-track-blur{
+  filter: blur(4px) brightness(90%);
+}
+
+
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust as needed */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000; /* Ensure toast is above other elements */
+  color: #777;
+  border-radius: 32px;
+}
+
+.toast img {
+  max-width: 100px; /* Adjust as needed */
+  margin: 10px 0;
+}
+
+.blur-background {
+  filter: blur(5px);
+}
+
+/* Ensure that only the background is blurred, not the toast */
+.blur-background > :not(.toast) {
+  filter: blur(5px);
+}

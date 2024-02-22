@@ -1,0 +1,37 @@
+.music-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  font-size: 2rem;
+  animation: float 2s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.note1 {
+  animation-delay: 0s;
+}
+.note2 {
+  animation-delay: 0.5s;
+}
+.note3 {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}

@@ -1,0 +1,120 @@
+.gradient {
+  color: white;
+}
+
+.music-section {
+  display: flex;
+  width: 100%;
+}
+
+.scrollable-section {
+  flex: 0 0 72%;
+  overflow-y: auto;
+  margin-top: 5%;
+  height: 88vh;
+  scrollbar-width: none;
+}
+
+.fixed-section {
+  flex: 0 0 28%;
+  height: 500px;
+  overflow-y: hidden;
+  margin-top: 15%;
+}
+
+.music-select-div {
+  margin: 10px;
+  padding: 20px;
+  height: 400px;
+  color: #d4cbd1;
+  display: flex;
+  justify-content: center;
+}
+
+.track-div {
+  margin: 10px;
+  padding: 20px;
+  height: 500px;
+  color: white;
+  overflow: hidden;
+}
+
+.track-info {
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  padding-left: 3%;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.button:hover {
+  background-color: #3c3a3b; /* Set background color to #df3079 */
+}
+
+.button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+.search-button {
+  transition: width 0.3s ease-in-out;
+  background: transparent;
+  border: 1px solid;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  border-color: #6e6e6e;
+  font-size: 12px;
+  width: 16%;
+}
+
+.neon-sign {
+  position: absolute;
+  left: 5%;
+  color: #df3079; /* Neon color */
+  text-shadow: 0 0 5px #df3079, 0 0 10px #df3079, 0 0 20px #df3079,
+    0 0 40px #df3079, 0 0 80px #df3079, 0 0 90px #df3079, 0 0 100px #df3079,
+    0 0 150px #df3079;
+  font-size: 32px; /* Adjust size as needed */
+  font-family: cursive;
+  width: max-content;
+}
+
+/* Optional: Animation to create a flickering effect */
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #df3079, 0 0 10px #df3079, 0 0 20px #df3079,
+      0 0 40px #df3079, 0 0 80px #df3079, 0 0 90px #df3079, 0 0 100px #df3079,
+      0 0 150px #df3079;
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+.neon-sign {
+  animation: flicker 1.5s infinite;
+}

@@ -1,0 +1,59 @@
+.album-container {
+  width: 98%;
+  background-color: #fffefe;
+  color: black;
+  padding: 20px;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.album-header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8px;
+}
+
+.album-description {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-text {
+  font-size: 13px;
+  color: #777;
+}
+
+.album-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.album-release-date {
+  color: #666;
+  font-size: 12px;
+}
+
+.album-tracks-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  margin-top: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.album-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.album-track-name {
+  margin-left: 2px;
+  font-size: 12px;
+  color: #666;
+}
